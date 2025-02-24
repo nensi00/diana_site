@@ -1,0 +1,15 @@
+@use "./import_fonts.scss";
+// Заголовок
+ @font-face {
+    font-family: 'Playfair Display', serif;
+    src: url('./import_fonts.scss');
+    font-style: normal;
+    font-weight: normal;
+ } 
+ // Текст 
+ @font-face {
+    font-family: 'Inter', serif;
+    src: url('./import_fonts.scss');
+    font-style: normal;
+    font-weight: normal;
+ }

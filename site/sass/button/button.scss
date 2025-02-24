@@ -1,0 +1,21 @@
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+}
+.main__button {
+    padding: 10px 20px;
+    font-size: 30px;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    font-family: 'Inter', serif;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+.main__button:hover {
+    color: var(--primary-color);
+    background-color: var(--secondary-color);
+}

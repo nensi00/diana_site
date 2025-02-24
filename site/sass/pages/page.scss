@@ -1,0 +1,229 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+// header
+.header__container {
+    background-color: var(--background-color);
+}
+.header__ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    padding: 20px 100px;
+}
+.header__li {
+    list-style: none;
+}
+.header__a {
+    text-decoration: none;
+    font-family: 'Inter';
+    color: var(--text-color);
+    font-size: 20px;
+    letter-spacing: 2px;
+    opacity: 1;
+    transition: all 0.5s;
+    font-weight: bold;
+}
+.header__a:hover {
+    color: var(--primary-color);
+    opacity: 0.5;
+}
+// end header
+// section hero
+.hero__container {
+    text-align: center;
+    position: relative;
+    margin-bottom: 30px;
+}
+.hero__img {
+    max-width: 900px;
+    max-height: 660px;
+}
+.hero__text {
+    position: absolute;
+    top: 500px;
+    left: 160px;
+    font-size: 40px;
+    font-family: 'Playfair Display', serif;
+    color: var(--text-color);
+    text-align: justify;
+}
+// end section hero
+// section aboutme
+.section__aboutme__txt {
+    background-color: var(--secondary-color);
+    padding: 20px 80px;
+    margin-bottom: 50px;
+}
+.aboutme_h1 {
+    font-size: 50px;
+    color: var(--primary-color);
+    text-align: center;
+    margin-bottom: 20px;
+}
+.aboutme__text {
+    font-size: 20px;
+    color: var(--text-color);
+    text-align: justify;
+    margin-bottom: 10px;
+    text-indent: 40px;
+}
+.aboutme__span {
+    border-bottom: dashed;
+    font-style: italic;
+    font-weight: bold;
+}
+.aboutme__photo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 50px;
+}
+.aboutme__photos {
+    width: 200px;
+    border-radius: 100px;
+}
+// end section aboutme
+//section why me
+.container__whyme {
+    background-color: var(--secondary-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0px;
+    margin-bottom: 50px;
+}
+.whyme__h1 {
+    font-size: 50px;
+    color: var(--primary-color);
+    text-align: center;
+    margin-bottom: 40px;
+}
+.whyme__txt {
+    border: 2px solid black;
+    border-radius: 20px;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 16px;
+    width: 80%;
+}
+.whyme__number {
+    font-size: 50px;
+    font-weight: bold;
+    font-family: 'Inter', serif;
+    color: var(--text-color);
+}
+.whyme__text {
+    font-size: 30px;
+    font-family: 'Inter', serif;
+    font-weight: normal;
+    color: var(--text-color);
+}
+// end section whyme
+// section question
+.faq-container {
+    margin-bottom: 50px;
+}
+.question__h2 {
+    text-align: center;
+    font-size: 50px;
+    font-family: 'Inter', serif;
+    font-weight: bold;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+}
+
+details {
+    border-bottom: 1px solid #ccc;
+    padding: 10px 0;
+}
+
+summary {
+    font-size: 30px;
+    font-weight: 500;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    font-family: 'Inter', serif;
+}
+
+summary::after {
+    content: "+";
+    font-size: 20px;
+    font-weight: bold;
+    color: #8B0000;
+    transition: transform 0.3s;
+    font-family: 'Inter', serif;
+}
+
+details[open] summary::after {
+    content: "−";
+}
+
+details p {
+    font-size: 20px;
+    color: #555;
+    padding-top: 8px;
+    line-height: 1.4;
+    animation: fadeIn 0.3s ease-in-out;
+    font-family: 'Inter', serif;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-5px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+// end section question
+
+//footer 
+.footer__container {
+    background-color: var(--secondary-color);
+    padding: 30px 0px;
+}
+.footer_h1 {
+    font-size: 50px;
+    font-family: 'Inter', serif;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.footer__ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+.footer__li {
+    list-style: none;
+}
+.footer__a {
+    text-decoration: none;
+    font-size: 30px;
+    font-family: 'Inter', serif;
+    border: 2px solid var(--primary-color);
+    border-radius: 16px;
+    padding: 10px 20px;
+    color: var(--text-color);
+    background-color: var(--secondary-color);
+}
+// end footer
+
+
+
+
+
+
